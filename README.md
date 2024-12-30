@@ -13,3 +13,9 @@ setup name and email:
 git config --global user.name "SadeghPouriyanZadeh"
 git config --global user.email "pouriyan.sadegh@gmail.com"
 ```
+
+## gitignore
+setup system-wide:
+1. Save .gitignore file to home directory (`~`) as .gitignore
+2. Run `git config --global core.excludesfile ~/.gitignore`
+
