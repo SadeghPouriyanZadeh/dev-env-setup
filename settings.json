@@ -1,0 +1,90 @@
+{
+  "notebook.lineNumbers": "on",
+  "notebook.output.textLineLimit": 50,
+  "notebook.formatOnSave.enabled": true,
+
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.list.openMode": "doubleClick",
+  "workbench.tree.expandMode": "doubleClick",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Dracula Theme",
+
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.inheritEnv": false,
+
+  "jupyter.askForKernelRestart": false,
+  "jupyter.experiments.enabled": false,
+  "jupyter.runStartupCommands": ["%load_ext autoreload", "%autoreload 2"],
+
+  "editor.hover.delay": 1000,
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.parameterHints.enabled": false,
+  "editor.suggestSelection": "first",
+  "editor.dragAndDrop": false,
+  "editor.wordWrap": "on",
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontSize": 16,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.codeActionsOnSave": {},
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
+
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  "[python]": {
+    "editor.rulers": [88],
+    "editor.selectionHighlight": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.createEnvironment.trigger": "off",
+  "python.analysis.autoImportCompletions": true,
+  "python.experiments.enabled": false,
+
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+
+  "todo-tree.tree.scanMode": "workspace only",
+  "todo-tree.tree.showBadges": true,
+  "todo-tree.tree.disableCompactFolders": false,
+  "todo-tree.tree.showCountsInTree": true,
+
+  "isort.args": ["--profile", "black"],
+  "security.workspace.trust.untrustedFiles": "open",
+  "remote.SSH.remotePlatform": {},
+  "[json]": { "editor.defaultFormatter": "vscode.json-language-features" },
+  "json.schemas": [],
+  "vsicons.dontShowNewVersionMessage": true,
+  "redhat.telemetry.enabled": true,
+  "conventionalCommits.showNewVersionNotes": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  "pylint.args": ["--disable=C0301", "--disable=C0114"],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
