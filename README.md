@@ -49,8 +49,8 @@ nano ~/.bashrc
 ```shell
 source ~/.bashrc
 ```
-
-5. Initialize the projcet in the project root directory:
+#### Initialization:
+Initialize in the project root directory every time you start a new project:
 ```shell
 pwd
 # /path/to/root/of/your/project
@@ -58,4 +58,30 @@ uvinit
 ```
 
 ### For Deep Learning Projects
+
+1. Install `miniconda` from [miniconda website](https://docs.anaconda.com/miniconda/install/):
+```shell
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+```
+
+2. Update conda:
+```shell
+conda update conda
+```
+
+3. Create a new environment using `environment.yml` file:
+
+Default environment name is `ml` but you can change it in `name` field of `environment.yml` file before running the command.
+```shell
+conda env create -f environment.yml
+```
+
+#### Initialization:
+The environment can be accessed system-wide by activating it:  
+```shell
+conda activate ml
+```
+- for the use in jupyter notebooks, the kernel can be selected as `ml` in any working directory.
 

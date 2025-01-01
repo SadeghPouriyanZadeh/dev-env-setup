@@ -1,0 +1,57 @@
+name: ml
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+# basic
+  - python
+  - ipykernel
+  - ipywidgets
+  - iprogress
+  - jupyter
+  - jupyterlab
+  - black
+  - tqdm
+# machine learning
+  - pytorch
+  - scikit-learn
+  - xgboost
+  - transformers
+  # - cudatoolkit # install cudatoolkit if you have a GPU
+# data management
+  - sqlite
+  - pymongo
+  - sqlalchemy
+# numerical and statistical analysis
+  - pandas
+  - numpy
+  - scipy
+# image processing
+  - opencv
+  - pillow
+  - albumentations
+  - scikit-image
+  - torchvision
+# audio processing
+  - torchaudio
+# data visualization
+  - matplotlib
+  - seaborn
+  - plotly
+  - bokeh
+# web API development
+  - fastapi
+  - uvicorn
+  - pydantic
+# interactive dashboards and web apps
+  - gradio
+  - streamlit
+# web scraping
+  - requests
+  - beautifulsoup4
+  - playwright # install playwright using `playwright install` after creating the environment
+  - scrapy
+  - selenium
+# testing
+  - pytest
