@@ -24,6 +24,28 @@ Setup settings:
 1. Open vscode settings using `Ctrl` + `,` and then settings.json
 2. Copy and save `settings.json` content into settings.json file of vscode settings
 
+## oh-my-zsh
+1. Install zsh first:
+```shell
+sudo apt update
+sudo apt install zsh
+```
+
+2. Install oh-my-zsh using [oh-my-zsh website](https://ohmyz.sh/#install) installation command:
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+3. Logout and login again to see the changes.
+```shell
+exit
+```
+
+4. Install plugins by editing plugins=(git) in `~/.zshrc` file  
+to `plugins=(git compleat emoji git-prompt pip sudo ubuntu vscode)`:
+```shell
+nano ~/.zshrc
+```
+
 ## package and virtual environment management
 ### For non-Deep-Learning Projects:
 
@@ -41,13 +63,13 @@ uv self update
 3. Identify your shell and add the alias to its configuration:  
 ```shell
 echo $SHELL
-# `/bin/bash` = Bash
-nano ~/.bashrc
+# `/usr/bin/zsh` = ZSH
+nano ~/.zshrc
 ```
 
 4. Reload configuration:
 ```shell
-source ~/.bashrc
+source ~/.zshrc
 ```
 #### Initialization:
 Initialize in the project root directory every time you start a new project:
@@ -59,7 +81,8 @@ uvinit
 
 ### For Deep Learning Projects
 
-1. Install `miniconda` from [miniconda website](https://docs.anaconda.com/miniconda/install/):
+1. Install `miniconda` from [miniconda website](https://docs.anaconda.com/miniconda/install/).  
+And say "**no**" to the initialization question:
 ```shell
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
