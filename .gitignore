@@ -1,5 +1,5 @@
-# How to use this file system-wide in unix systems (GNU/Linux, BSD, or Mac)?
-# 1. Save this file to home directory as .gitignore
+# How to config system-wide gitignore using this file?
+# 1. Save this file to home directory (~) as .gitignore
 # 2. Run `git config --global core.excludesfile ~/.gitignore`
 
 # ----------------------------
@@ -10,6 +10,11 @@
 # ignore the development jupyter notebook and python script files starting with `devbook` and `devscript`
 devbook*.ipynb
 devscript*.py
+
+# uv environment files
+.python-version
+pyproject.toml
+uv.lock
 
 # ----------------------------------------------------------------
 # General Python Files to Ignore
