@@ -52,7 +52,13 @@ Linux Mint (debian based) is my development OS with Xfce as the desktop
     exit
     ```
 
-4. Install plugins by editing `~/.zshrc` file:
+4. Change the default shell to zsh.
+
+    ```shell
+    chsh -s $(which zsh)
+    ```
+
+5. Install plugins by editing `~/.zshrc` file:
 
     ```shell
     nano ~/.zshrc
@@ -60,6 +66,8 @@ Linux Mint (debian based) is my development OS with Xfce as the desktop
     # plugins=(git compleat emoji git-prompt pip sudo ubuntu vscode)
     ```
 
+6. reboot to see the changes
+   
 ## uv
 
 1. Install `uv` from [their website](https://docs.astral.sh/uv/):
