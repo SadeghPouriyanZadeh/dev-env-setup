@@ -16,6 +16,9 @@ devscript*.py
 pyproject.toml
 uv.lock
 
+# vscode settings
+.vscode/
+
 # ----------------------------------------------------------------
 # General Python Files to Ignore
 # (https://github.com/github/gitignore/blob/main/Python.gitignore)
