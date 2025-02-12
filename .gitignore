@@ -6,7 +6,7 @@
 # My Custom gitignore Policies
 # ----------------------------
 # ignore gitignore_dir directory in the root of the project/system (including the files in it)
-/gitignore_dir
+/.gitignore_dir
 # ignore the development jupyter notebook and python script files starting with `devbook` and `devscript`
 devbook*.ipynb
 devscript*.py
