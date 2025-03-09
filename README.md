@@ -67,7 +67,7 @@ Linux Mint (debian based) is my development OS with Xfce as the desktop
     ```
 
 6. reboot to see the changes
-   
+
 ## uv
 
 1. Install `uv` from [their website](https://docs.astral.sh/uv/):
